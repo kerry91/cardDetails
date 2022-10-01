@@ -11,13 +11,13 @@ function replaceCNText(){
 }
 
 function replaceExpiryMText(){
-  let newText = document.getElementById('MM').value
+  let newText = document.getElementById('month').value
 
   document.getElementById("cMM").innerHTML = newText;
 }
 
 function replaceExpiryYText(){
-  let newText = document.getElementById('YY').value
+  let newText = document.getElementById('year').value
 
   document.getElementById("cYY").innerHTML = newText;
 }
@@ -28,10 +28,6 @@ function replaceCvcText(){
   document.getElementById("cCvc").innerHTML = newText;
 }
 
-function restart(){
-  document.getElementById("formCol").style.visibility = "visible";
-  document.getElementById("successPanel").style.visibility = "hidden";
-}
 
 
 // Targetting all classes & id from HTML

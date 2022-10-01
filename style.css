@@ -59,6 +59,13 @@ body{
   color: white;
 }
 
+#slash{
+  position:absolute;
+  top: 45%;
+  left:38.3%;
+  color: white;
+}
+
 #cCvc{
   position:absolute;
   top: 69%;
@@ -122,6 +129,12 @@ body{
     position:absolute;
     top: 38%;
     left:83%;
+    color: white;
+  }
+  #slash{
+    position:absolute;
+    top: 38%;
+    left:80%;
     color: white;
   }
 
