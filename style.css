@@ -96,7 +96,6 @@ body{
     top: 23%;
     left:10%;
   }
-
   #cNumber{
     position:absolute;
     top: 33%;
@@ -132,6 +131,12 @@ body{
     left:78%;
     color: white;
   }
+  .successPanel {
+
+      position: absolute;
+      top: 60% !important;
+      right: 0 !important;
+}
 }
 
 .failure-icon,
