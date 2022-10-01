@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/ff9a0acac1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-8 col-md-8 col-sm-12 col-12">
+        <div id="cardFront">
+<img class="cardFront" src="images/bg-card-front.png" alt="Card Front" />
+<img class="cardLogo" src="images/card-logo.svg" alt="Card Logo" />
+<p id="cNumber">0000 0000 0000 0000</p>
+<p id="cName">Jane Appleseed</p>
+<p id ="cMM">00 /</p>
+<p id ="cYY">00</p>
+
+</div>
+<div id="cardBack">
+<img class="cardBack" src="images/bg-card-back.png" alt="Card Back" />
+<p id="cCvc">000</p>
+</div>
+      </div>
+
+      <div class="formCol col col-lg-4 col-md-4 col-sm-12 col-12" id="formCol">
+        <form class="row g-3" name="cardDetails">
+          <div class="col-12">
+            <label for="cardholderName" class="form-label">CARDHOLDER NAME</label>
+            <input oninput="replaceCHText()" type="text" class="form-control" id="cardholderName" name="cardholderName" placeholder="Miss Smith" >
+              <span class ="error"></span>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+          </div>
+          <div class="col-12">
+            <label  for="cardNumber" class="form-label">CARD NUMBER</label>
+            <input oninput="replaceCNText()" type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000">
+            <span class ="error"></span>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+          </div>
+          <div class="col col-md-6 col-sm-12 col-12">
+          <label for="inputCity" class="form-label">EXP. DATE (MM/YY)</label>
+            <div class="my input-group mb-4">
+              <input oninput="replaceExpiryMText()" type="text" class="form-control" id="month" name="month" placeholder="MM">
+              <input oninput="replaceExpiryYText()" type="text" class="form-control" id="year" name="year" placeholder="YY">
+              <span class ="error"></span>
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+            </div>
+
+          </div>
+          <div class="col col-md-6 col-sm-12 col-12">
+            <label for="cvc" class="form-label">CVC</label>
+            <input oninput="replaceCvcText()" type="text" class="form-control" id="cvc" placeholder="e.g. 123" name="cvc">
+            <span class ="error"></span>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="subBtn btn btn-dark">Confirm</button>
+          </div>
+        </form>
+
+
+        <div class="successPanel col col-lg-3 col-md-4 col-sm-12 col-12 text-center" id="successPanel">
+    <img class="complete" src="images/icon-complete.svg" alt="Tick" />
+    <p class="thanks">Thank You!</p>
+    <p class="added">We've added your card details</p>
+    <button class="subBtn btn btn-dark" onclick="restart()">Done</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

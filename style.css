@@ -1,0 +1,176 @@
+body{
+  background-image: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+.cardFront{
+  position: absolute;
+  top:20%;
+  left: 13%;
+}
+
+.cardBack{
+  position: absolute;
+  top:55%;
+  left: 20%;
+}
+
+.formCol{
+  margin-top: 15%;
+  visibility: show;
+}
+
+.subBtn{
+  width:100%;
+}
+
+.cardLogo{
+  position:absolute;
+  top: 23%;
+  left:15%;
+}
+
+#cNumber{
+  position:absolute;
+  top: 38%;
+  left:15%;
+  color: white;
+  font-size: 34px;
+}
+
+#cName{
+  position:absolute;
+  top: 45%;
+  left:15%;
+  color: white;
+}
+
+#cMM{
+  position:absolute;
+  top: 45%;
+  left:37%;
+  color: white;
+}
+
+#cYY{
+  position:absolute;
+  top: 45%;
+  left:39%;
+  color: white;
+}
+
+#cCvc{
+  position:absolute;
+  top: 69%;
+  left:43%;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+    background-image: url("images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+  }
+  .cardFront{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    width:85%;
+    height:25%;
+  }
+
+  .cardBack{
+    position: absolute;
+    top:5%;
+    left: 10%;
+    width:85%;
+    height:25%;
+    z-index: -1;
+  }
+  .formCol{
+    margin-top: 85%;
+  }
+  .cardLogo{
+    position:absolute;
+    top: 23%;
+    left:10%;
+  }
+
+  #cNumber{
+    position:absolute;
+    top: 33%;
+    left:12%;
+    color: white;
+    font-size: 24px;
+  }
+
+  #cName{
+    position:absolute;
+    top: 38%;
+    left:12%;
+    color: white;
+  }
+
+  #cMM{
+    position:absolute;
+    top: 38%;
+    left:75%;
+    color: white;
+  }
+
+  #cYY{
+    position:absolute;
+    top: 38%;
+    left:83%;
+    color: white;
+  }
+
+  #cCvc{
+    position:absolute;
+    top: 15.5%;
+    left:78%;
+    color: white;
+  }
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+form div i {
+
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+
+.successPanel{
+  visibility: hidden;
+  position:absolute;
+  top:35%;
+  right:9%;
+}
+
+.thanks{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.added{
+  font-size: 16px;
+}
