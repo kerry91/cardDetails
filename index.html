@@ -27,41 +27,41 @@
       </div>
 
       <div class="formCol col col-lg-4 col-md-4 col-sm-12 col-12" id="formCol">
-        <form class="row g-3" name="cardDetails">
+        <form class="row g-3 needs-validation" novalidate>
           <div class="col-12">
             <label for="cardholderName" class="form-label">CARDHOLDER NAME</label>
-            <input oninput="replaceCHText()" type="text" class="form-control" id="cardholderName" name="cardholderName" placeholder="Jane Appleseed" >
-              <span class ="error"></span>
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
+            <input oninput="replaceCHText()" type="text" class="form-control" id="cardholderName" name="cardholderName" placeholder="Jane Appleseed" required>
+            <div class="invalid-feedback">
+              Please enter a card name
+            </div>
           </div>
           <div class="col-12">
             <label  for="cardNumber" class="form-label">CARD NUMBER</label>
-            <input oninput="replaceCNText()" type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000">
-            <span class ="error"></span>
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
+            <input oninput="replaceCNText()" type="tel" class="form-control" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+            <div class="invalid-feedback">
+              Please enter a card number (must be a number)
+            </div>
           </div>
           <div class="col col-md-6 col-sm-12 col-12">
           <label for="inputCity" class="form-label">EXP. DATE (MM/YY)</label>
             <div class="my input-group mb-4">
-              <input oninput="replaceExpiryMText()" type="text" class="form-control" id="month" name="month" placeholder="MM">
-              <input oninput="replaceExpiryYText()" type="text" class="form-control" id="year" name="year" placeholder="YY">
-              <span class ="error"></span>
-              <i class="fas fa-exclamation-circle failure-icon"></i>
-              <i class="far fa-check-circle success-icon"></i>
+              <input oninput="replaceExpiryMText()" type="tel" class="form-control" id="month" name="month" placeholder="MM" pattern="[0-9]{2}" required>
+              <input oninput="replaceExpiryYText()" type="tel" class="form-control" id="year" name="year" placeholder="YY" pattern="[0-9]{2}" required>
+              <div class="invalid-feedback">
+                Please enter a month and/or year (must be a number)
+              </div>
             </div>
 
           </div>
           <div class="col col-md-6 col-sm-12 col-12">
             <label for="cvc" class="form-label">CVC</label>
-            <input oninput="replaceCvcText()" type="text" class="form-control" id="cvc" placeholder="e.g. 123" name="cvc">
-            <span class ="error"></span>
-            <i class="fas fa-exclamation-circle failure-icon"></i>
-            <i class="far fa-check-circle success-icon"></i>
+            <input oninput="replaceCvcText()" type="tel" class="form-control" id="cvc" placeholder="e.g. 123" name="cvc" pattern="[0-9]{3}" required>
+            <div class="invalid-feedback">
+              Please enter a cvc number (Must be an number)
+            </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="subBtn btn btn-dark">Confirm</button>
+            <button type="submit" class="subBtn btn btn-dark" >Confirm</button>
           </div>
         </form>
 
