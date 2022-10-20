@@ -86,10 +86,110 @@ body{
   color: white;
 }
 
+@media screen and (max-width: 992px) {
+  body{
+    background-image: url("images/bg-main-desktop.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .cardFront{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    width:85%;
+    height:100vh;
+  }
+
+  .cardBack{
+    position: absolute;
+    top:5%;
+    left: 10%;
+    width:85%;
+    height:25%;
+  }
+  .formCol{
+    margin-top: 20% !important;
+  }
+  .cardLogo{
+    position:absolute;
+    top: 5%;
+    left:5%;
+  }
+
+  #cNumber{
+    position:absolute;
+    bottom: 7%;
+    left:5%;
+    color: white;
+    font-size: 24px;
+  }
+
+  #cName{
+    position:absolute;
+    bottom: 0%;
+    left:5%;
+    color: white;
+  }
+
+  #cMM{
+    position:absolute;
+    bottom: 0%;
+    right:15%;
+    color: white;
+  }
+
+  #cYY{
+    position:absolute;
+    bottom: 0%;
+    right:8%;
+    color: white;
+  }
+
+  #slash{
+    position:absolute;
+    bottom: 0%;
+    right:13%;
+    color: white;
+  }
+
+  #cCvc{
+    position:absolute;
+    top: 45%;
+    right:12%;
+    color: white;
+  }
+  .successPanel {
+
+      position: absolute;
+      top: 60% !important;
+      right: 0 !important;
+}
+#card-front-container{
+  position: absolute;
+  top:5%;
+  left: 6%;
+  width: 357px;
+  height: 195px;
+
+}
+
+#card-back-container{
+  position: absolute;
+  top:25%;
+  left: 13%;
+  width: 357px;
+  height: 195px;
+}
+.formCol{
+  margin-top: 95%;
+}
+}
+
 
 @media screen and (max-width: 600px) {
   body{
     background-image: url("images/bg-main-mobile.png");
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .cardFront{
@@ -122,7 +222,7 @@ body{
     bottom: 7%;
     left:5%;
     color: white;
-    font-size: 34px;
+    font-size: 24px;
   }
 
   #cName{
@@ -182,32 +282,8 @@ body{
   height: 195px;
 }
 .formCol{
-  margin-top: 95%;
+  margin-top: 100% !important;
 }
-}
-
-.failure-icon,
-.error {
-  color: red;
-}
-
-.success-icon {
-  color: green;
-}
-
-.error {
-  font-size: 14.5px;
-  margin-top: 5px;
-}
-
-form div i {
-
-}
-
-.success-icon,
-.failure-icon {
-  right: 0;
-  opacity: 0;
 }
 
 
