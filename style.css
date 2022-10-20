@@ -186,7 +186,7 @@ body{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 700px){
   body{
     background-image: url("images/bg-main-mobile.png");
     background-size: contain;
